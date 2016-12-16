@@ -15,7 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = MainViewController()
+        window?.makeKeyAndVisible()
+        UITabBar.appearance().tintColor = UIColor.orange //设置选中的item图片及文字颜色
+//        UINavigationBar.appearance().backgroundColor = UIColor.orange
+//        UINavigationBar.appearance().tintColor = UIColor.orange
+//        UITabBar.appearance().barTintColor = UIColor.red  //设置这个tabbar的背景颜色
+//        if #available(iOS 10.0, *) {
+//            UITabBar.appearance().unselectedItemTintColor = UIColor.blue //设置不被选中的item的图片及文字颜色
+//        } else {
+//            // Fallback on earlier versions
+//        }
         return true
     }
 

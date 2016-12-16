@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		CE1383E01E02998B000BA3CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1383DF1E02998B000BA3CA /* AppDelegate.swift */; };
 		CE1383E71E02998B000BA3CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1383E61E02998B000BA3CA /* Assets.xcassets */; };
+		CE6157B91E03CAA500C0B6D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6157B81E03CAA500C0B6D2 /* MainViewController.swift */; };
+		CE6157BB1E03D6EB00C0B6D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6157BA1E03D6EB00C0B6D2 /* HomeViewController.swift */; };
+		CE6157BD1E03D6FB00C0B6D2 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6157BC1E03D6FB00C0B6D2 /* LiveViewController.swift */; };
+		CE6157BF1E03D70800C0B6D2 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6157BE1E03D70800C0B6D2 /* FollowViewController.swift */; };
+		CE6157C11E03D71400C0B6D2 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6157C01E03D71400C0B6D2 /* MeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +21,11 @@
 		CE1383DF1E02998B000BA3CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE1383E61E02998B000BA3CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1383EB1E02998B000BA3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE6157B81E03CAA500C0B6D2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE6157BA1E03D6EB00C0B6D2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE6157BC1E03D6FB00C0B6D2 /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		CE6157BE1E03D70800C0B6D2 /* FollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		CE6157C01E03D71400C0B6D2 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,7 @@
 		CE6157B21E03C83800C0B6D2 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				CE6157BE1E03D70800C0B6D2 /* FollowViewController.swift */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -79,6 +90,7 @@
 		CE6157B31E03C83800C0B6D2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CE6157BA1E03D6EB00C0B6D2 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -86,6 +98,7 @@
 		CE6157B41E03C83800C0B6D2 /* Living */ = {
 			isa = PBXGroup;
 			children = (
+				CE6157BC1E03D6FB00C0B6D2 /* LiveViewController.swift */,
 			);
 			path = Living;
 			sourceTree = "<group>";
@@ -93,6 +106,7 @@
 		CE6157B51E03C83800C0B6D2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CE6157B81E03CAA500C0B6D2 /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -100,6 +114,7 @@
 		CE6157B61E03C83800C0B6D2 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				CE6157C01E03D71400C0B6D2 /* MeViewController.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -182,7 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6157C11E03D71400C0B6D2 /* MeViewController.swift in Sources */,
 				CE1383E01E02998B000BA3CA /* AppDelegate.swift in Sources */,
+				CE6157B91E03CAA500C0B6D2 /* MainViewController.swift in Sources */,
+				CE6157BF1E03D70800C0B6D2 /* FollowViewController.swift in Sources */,
+				CE6157BD1E03D6FB00C0B6D2 /* LiveViewController.swift in Sources */,
+				CE6157BB1E03D6EB00C0B6D2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
