@@ -26,12 +26,23 @@ extension HomeViewController{
     }
     
     fileprivate func setUpNav() {
-        let leftBtn = UIButton()
-        leftBtn.setImage(UIImage(named:"logo"), for: .normal)
-        leftBtn.sizeToFit()
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftBtn)
+//        let leftBtn = UIButton()
+//        leftBtn.setImage(UIImage(named:"logo"), for: .normal)
+//        leftBtn.sizeToFit()
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftBtn)
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "logo")
+        
+        let itemSize = CGSize(width: 40, height: 40)
         
         
-        navigationItem.rightBarButtonItems = []
+        let search = UIBarButtonItem(imageName: "btn_search", selImageName: "btn_search_clicked", itemSize: itemSize)
+        
+        let history = UIBarButtonItem(imageName: "image_my_history", selImageName: "Image_my_history_click", itemSize: itemSize)
+        
+        let scan = UIBarButtonItem(imageName: "Image_scan", selImageName: "Image_scan_click", itemSize: itemSize)
+        
+        
+        navigationItem.rightBarButtonItems = [search,history,scan]
     }
 }

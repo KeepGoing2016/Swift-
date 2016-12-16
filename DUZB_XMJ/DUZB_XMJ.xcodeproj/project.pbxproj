@@ -14,6 +14,7 @@
 		CE6157BD1E03D6FB00C0B6D2 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6157BC1E03D6FB00C0B6D2 /* LiveViewController.swift */; };
 		CE6157BF1E03D70800C0B6D2 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6157BE1E03D70800C0B6D2 /* FollowViewController.swift */; };
 		CE6157C11E03D71400C0B6D2 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6157C01E03D71400C0B6D2 /* MeViewController.swift */; };
+		CEA067E51E03EE0D00C8722A /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA067E41E03EE0D00C8722A /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CE6157BC1E03D6FB00C0B6D2 /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		CE6157BE1E03D70800C0B6D2 /* FollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		CE6157C01E03D71400C0B6D2 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		CEA067E41E03EE0D00C8722A /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +124,17 @@
 		CE6157B71E03C83800C0B6D2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				CEA067E31E03EDDB00C8722A /* Extension */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		CEA067E31E03EDDB00C8722A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CEA067E41E03EE0D00C8722A /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 				CE6157C11E03D71400C0B6D2 /* MeViewController.swift in Sources */,
 				CE1383E01E02998B000BA3CA /* AppDelegate.swift in Sources */,
 				CE6157B91E03CAA500C0B6D2 /* MainViewController.swift in Sources */,
+				CEA067E51E03EE0D00C8722A /* UIBarButtonItem+Extension.swift in Sources */,
 				CE6157BF1E03D70800C0B6D2 /* FollowViewController.swift in Sources */,
 				CE6157BD1E03D6FB00C0B6D2 /* LiveViewController.swift in Sources */,
 				CE6157BB1E03D6EB00C0B6D2 /* HomeViewController.swift in Sources */,
