@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		CE1383E01E02998B000BA3CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1383DF1E02998B000BA3CA /* AppDelegate.swift */; };
 		CE1383E71E02998B000BA3CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1383E61E02998B000BA3CA /* Assets.xcassets */; };
-		CE6157B91E03CAA500C0B6D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6157B81E03CAA500C0B6D2 /* MainViewController.swift */; };
-		CE6157BB1E03D6EB00C0B6D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6157BA1E03D6EB00C0B6D2 /* HomeViewController.swift */; };
-		CE6157BD1E03D6FB00C0B6D2 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6157BC1E03D6FB00C0B6D2 /* LiveViewController.swift */; };
-		CE6157BF1E03D70800C0B6D2 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6157BE1E03D70800C0B6D2 /* FollowViewController.swift */; };
-		CE6157C11E03D71400C0B6D2 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6157C01E03D71400C0B6D2 /* MeViewController.swift */; };
 		CEA067E51E03EE0D00C8722A /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA067E41E03EE0D00C8722A /* UIBarButtonItem+Extension.swift */; };
+		CEA067EA1E08CAB800C8722A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA067E71E08CAB800C8722A /* MainViewController.swift */; };
+		CEA067EF1E08CAC600C8722A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA067EC1E08CAC600C8722A /* HomeViewController.swift */; };
+		CEA067F41E08CAD200C8722A /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA067F11E08CAD200C8722A /* LiveViewController.swift */; };
+		CEA067F91E08CAE700C8722A /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA067F61E08CAE700C8722A /* FollowViewController.swift */; };
+		CEA067FE1E08CAFB00C8722A /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA067FB1E08CAFB00C8722A /* MeViewController.swift */; };
+		CEA068001E08CB2B00C8722A /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA067FF1E08CB2B00C8722A /* PageTitleView.swift */; };
+		CEA068021E08D48400C8722A /* CommonConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA068011E08D48400C8722A /* CommonConstant.swift */; };
+		CEA068041E09004000C8722A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA068031E09004000C8722A /* UIColor+Extension.swift */; };
+		CEA068061E0919E700C8722A /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA068051E0919E700C8722A /* PageContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +26,16 @@
 		CE1383DF1E02998B000BA3CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE1383E61E02998B000BA3CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1383EB1E02998B000BA3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE6157B81E03CAA500C0B6D2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		CE6157BA1E03D6EB00C0B6D2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		CE6157BC1E03D6FB00C0B6D2 /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
-		CE6157BE1E03D70800C0B6D2 /* FollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
-		CE6157C01E03D71400C0B6D2 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		CEA067E41E03EE0D00C8722A /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		CEA067E71E08CAB800C8722A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CEA067EC1E08CAC600C8722A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CEA067F11E08CAD200C8722A /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		CEA067F61E08CAE700C8722A /* FollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		CEA067FB1E08CAFB00C8722A /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		CEA067FF1E08CB2B00C8722A /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		CEA068011E08D48400C8722A /* CommonConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConstant.swift; sourceTree = "<group>"; };
+		CEA068031E09004000C8722A /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		CEA068051E0919E700C8722A /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +92,9 @@
 		CE6157B21E03C83800C0B6D2 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
-				CE6157BE1E03D70800C0B6D2 /* FollowViewController.swift */,
+				CEA067F51E08CAE700C8722A /* Controller */,
+				CEA067F71E08CAE700C8722A /* Model */,
+				CEA067F81E08CAE700C8722A /* View */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -92,7 +102,9 @@
 		CE6157B31E03C83800C0B6D2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CE6157BA1E03D6EB00C0B6D2 /* HomeViewController.swift */,
+				CEA067EB1E08CAC600C8722A /* Controller */,
+				CEA067ED1E08CAC600C8722A /* Model */,
+				CEA067EE1E08CAC600C8722A /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -100,7 +112,9 @@
 		CE6157B41E03C83800C0B6D2 /* Living */ = {
 			isa = PBXGroup;
 			children = (
-				CE6157BC1E03D6FB00C0B6D2 /* LiveViewController.swift */,
+				CEA067F01E08CAD200C8722A /* Controller */,
+				CEA067F21E08CAD200C8722A /* Model */,
+				CEA067F31E08CAD200C8722A /* View */,
 			);
 			path = Living;
 			sourceTree = "<group>";
@@ -108,7 +122,9 @@
 		CE6157B51E03C83800C0B6D2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CE6157B81E03CAA500C0B6D2 /* MainViewController.swift */,
+				CEA067E61E08CAB800C8722A /* Controller */,
+				CEA067E81E08CAB800C8722A /* Model */,
+				CEA067E91E08CAB800C8722A /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -116,7 +132,9 @@
 		CE6157B61E03C83800C0B6D2 /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				CE6157C01E03D71400C0B6D2 /* MeViewController.swift */,
+				CEA067FA1E08CAFB00C8722A /* Controller */,
+				CEA067FC1E08CAFB00C8722A /* Model */,
+				CEA067FD1E08CAFB00C8722A /* View */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -125,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA067E31E03EDDB00C8722A /* Extension */,
+				CEA068011E08D48400C8722A /* CommonConstant.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -133,8 +152,121 @@
 			isa = PBXGroup;
 			children = (
 				CEA067E41E03EE0D00C8722A /* UIBarButtonItem+Extension.swift */,
+				CEA068031E09004000C8722A /* UIColor+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CEA067E61E08CAB800C8722A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEA067E71E08CAB800C8722A /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEA067E81E08CAB800C8722A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA067E91E08CAB800C8722A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEA067FF1E08CB2B00C8722A /* PageTitleView.swift */,
+				CEA068051E0919E700C8722A /* PageContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEA067EB1E08CAC600C8722A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEA067EC1E08CAC600C8722A /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEA067ED1E08CAC600C8722A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA067EE1E08CAC600C8722A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEA067F01E08CAD200C8722A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEA067F11E08CAD200C8722A /* LiveViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEA067F21E08CAD200C8722A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA067F31E08CAD200C8722A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEA067F51E08CAE700C8722A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEA067F61E08CAE700C8722A /* FollowViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEA067F71E08CAE700C8722A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA067F81E08CAE700C8722A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEA067FA1E08CAFB00C8722A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEA067FB1E08CAFB00C8722A /* MeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEA067FC1E08CAFB00C8722A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA067FD1E08CAFB00C8722A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,13 +340,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE6157C11E03D71400C0B6D2 /* MeViewController.swift in Sources */,
+				CEA068001E08CB2B00C8722A /* PageTitleView.swift in Sources */,
+				CEA067EF1E08CAC600C8722A /* HomeViewController.swift in Sources */,
+				CEA068061E0919E700C8722A /* PageContentView.swift in Sources */,
+				CEA067FE1E08CAFB00C8722A /* MeViewController.swift in Sources */,
 				CE1383E01E02998B000BA3CA /* AppDelegate.swift in Sources */,
-				CE6157B91E03CAA500C0B6D2 /* MainViewController.swift in Sources */,
 				CEA067E51E03EE0D00C8722A /* UIBarButtonItem+Extension.swift in Sources */,
-				CE6157BF1E03D70800C0B6D2 /* FollowViewController.swift in Sources */,
-				CE6157BD1E03D6FB00C0B6D2 /* LiveViewController.swift in Sources */,
-				CE6157BB1E03D6EB00C0B6D2 /* HomeViewController.swift in Sources */,
+				CEA067F41E08CAD200C8722A /* LiveViewController.swift in Sources */,
+				CEA067EA1E08CAB800C8722A /* MainViewController.swift in Sources */,
+				CEA067F91E08CAE700C8722A /* FollowViewController.swift in Sources */,
+				CEA068021E08D48400C8722A /* CommonConstant.swift in Sources */,
+				CEA068041E09004000C8722A /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
