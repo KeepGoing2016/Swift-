@@ -128,3 +128,19 @@ extension PageTitleView{
         delegate?.pageTitleView(self, selectedIndex: currentIndex)
     }
 }
+
+//MARK:-对外暴露的方法
+extension PageTitleView{
+    func pageTitleViewScrollTo(fromIndex:Int ,toIndex:Int,progress:CGFloat){
+        
+        print(progress)
+        let toLable = titleLables[toIndex]
+        let fromeLable = titleLables[fromIndex]
+        scrollLine.center.x = fromeLable.center.x+(toLable.center.x-fromeLable.center.x)*progress
+        
+        let deltaColor = (kSelectColor.0-kNormalColor.0,kSelectColor.1-kNormalColor.1,kSelectColor.2-kNormalColor.2)
+        fromeLable.textColor = UIColor(r: kSelectColor.0-deltaColor.0*progress, g: kSelectColor.1-deltaColor.1*progress, b: kSelectColor.2-deltaColor.2*progress)
+        toLable.textColor = UIColor(r: kNormalColor.0+deltaColor.0*progress, g: kNormalColor.1+deltaColor.1*progress, b: kNormalColor.2+deltaColor.2*progress)
+        oldIndex = toIndex
+    }
+}

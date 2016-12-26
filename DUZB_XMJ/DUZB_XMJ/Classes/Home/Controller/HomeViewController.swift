@@ -8,12 +8,30 @@
 
 import UIKit
 
+private let kPageTitleViewH:CGFloat = 40
 class HomeViewController: UIViewController { 
 
-    fileprivate lazy var pageTitleView = { ()-> PageTitleView in
-        let pageTitleV = PageTitleView(frame: CGRect(x: 0, y: kStatusBarH+kNavigationBarH, width: kScreenW, height: 40), titles: ["推荐","手游","娱乐","游戏","趣玩"])
+    fileprivate lazy var pageTitleView:PageTitleView = {[weak self] in
+        let pageTitleV = PageTitleView(frame: CGRect(x: 0, y: kStatusBarH+kNavigationBarH, width: kScreenW, height: kPageTitleViewH), titles: ["推荐","娱乐","游戏","趣玩"])
+        pageTitleV.delegate = self
 //        pageTitleV.backgroundColor = UIColor.orange
         return pageTitleV
+    }()
+    
+    fileprivate lazy var pageContentView:PageContentView = {[weak self] in
+        let v1 = UIViewController()
+        v1.view.backgroundColor = UIColor.randomColor()
+        let v2 = UIViewController()
+        v2.view.backgroundColor = UIColor.randomColor()
+        let v3 = UIViewController()
+        v3.view.backgroundColor = UIColor.randomColor()
+        let v4 = UIViewController()
+        v4.view.backgroundColor = UIColor.randomColor()
+        let pageContentVY = kStatusBarH+kNavigationBarH+kPageTitleViewH
+        let contentVF = CGRect(x: 0, y:pageContentVY , width: kScreenW, height: kScreenH-pageContentVY)
+        let pageContentV = PageContentView(frame: contentVF, childVCs: [v1,v2,v3,v4], parentVC: self!)
+        pageContentV.delegate = self
+        return pageContentV
     }()
     
     override func viewDidLoad() {
@@ -35,6 +53,9 @@ extension HomeViewController{
         
         //设置头部选择标题
         view.addSubview(pageTitleView)
+        
+        //设置中间内容
+        view.addSubview(pageContentView)
     }
     
     fileprivate func setUpNav() {
@@ -64,4 +85,15 @@ extension HomeViewController{
 ////        pageTitleView.backgroundColor = UIColor.brown
 //        view.addSubview(pageTitleView)
 //    }
+}
+
+//代理方法
+extension HomeViewController:PageTitleViewDelegate,PageContentViewDelegate{
+    internal func pageTitleView(_ titleView: PageTitleView, selectedIndex index: Int) {
+        pageContentView.pageContentViewScrollTo(index: index)
+    }
+    
+    func pageContentView(_ pageContentView: PageContentView,fromIndex:Int ,toIndex: Int, progress: CGFloat) {
+        pageTitleView.pageTitleViewScrollTo(fromIndex:fromIndex,toIndex: toIndex, progress: progress)
+    }
 }
