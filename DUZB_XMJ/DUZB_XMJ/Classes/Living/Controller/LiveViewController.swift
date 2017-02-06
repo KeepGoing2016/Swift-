@@ -14,6 +14,13 @@ class LiveViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.orange
+//        //    导航栏变为透明
+//        [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:0];
+//        //    让黑线消失的方法
+//        self.navigationController.navigationBar.shadowImage=[UIImage new];
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage.init()
+        self.navigationController?.navigationBar.alpha = 0.0
     }
 
     override func didReceiveMemoryWarning() {

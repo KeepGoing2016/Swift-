@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = MainViewController()
         window?.makeKeyAndVisible()
         UITabBar.appearance().tintColor = UIColor.orange //设置选中的item图片及文字颜色
+//        UINavigationBar.appearance().barTintColor = UIColor.orange
 //        UINavigationBar.appearance().backgroundColor = UIColor.orange
 //        UINavigationBar.appearance().tintColor = UIColor.orange
 //        UITabBar.appearance().barTintColor = UIColor.red  //设置这个tabbar的背景颜色

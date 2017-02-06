@@ -12,23 +12,19 @@ private let kPageTitleViewH:CGFloat = 40
 class HomeViewController: UIViewController { 
 
     fileprivate lazy var pageTitleView:PageTitleView = {[weak self] in
-        let pageTitleV = PageTitleView(frame: CGRect(x: 0, y: kStatusBarH+kNavigationBarH, width: kScreenW, height: kPageTitleViewH), titles: ["推荐","娱乐","游戏","趣玩"])
+        let pageTitleV = PageTitleView(frame: CGRect(x: 0, y: kStatusBarH+kNavigationBarH, width: kScreenW, height: kPageTitleViewH), titles: ["推荐","游戏","娱乐","趣玩"])
         pageTitleV.delegate = self
 //        pageTitleV.backgroundColor = UIColor.orange
         return pageTitleV
     }()
     
     fileprivate lazy var pageContentView:PageContentView = {[weak self] in
-        let v1 = UIViewController()
-        v1.view.backgroundColor = UIColor.randomColor()
-        let v2 = UIViewController()
-        v2.view.backgroundColor = UIColor.randomColor()
-        let v3 = UIViewController()
-        v3.view.backgroundColor = UIColor.randomColor()
-        let v4 = UIViewController()
-        v4.view.backgroundColor = UIColor.randomColor()
+        let v1 = RecommendViewController()
+        let v2 = GameViewController()
+        let v3 = FunViewController()
+        let v4 = FunnyViewController()
         let pageContentVY = kStatusBarH+kNavigationBarH+kPageTitleViewH
-        let contentVF = CGRect(x: 0, y:pageContentVY , width: kScreenW, height: kScreenH-pageContentVY)
+        let contentVF = CGRect(x: 0, y:pageContentVY , width: kScreenW, height: kScreenH-pageContentVY-kTapBarH)
         let pageContentV = PageContentView(frame: contentVF, childVCs: [v1,v2,v3,v4], parentVC: self!)
         pageContentV.delegate = self
         return pageContentV
